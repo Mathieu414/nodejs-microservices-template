@@ -15,5 +15,8 @@
   ],
   "devDependencies": {
     "concurrently": "^7.6.0"
+  },
+  "dependencies": {
+    "pino-pretty": "^10.3.1"
   }
 }
