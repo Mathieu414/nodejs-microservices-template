@@ -6,10 +6,13 @@ const router = require('./routes/index');
 
 const app = express();
 
+const auth = require('./middlewares/auth');
+
 app.use(pino);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(auth);
 
 app.use('/api', router);
 
