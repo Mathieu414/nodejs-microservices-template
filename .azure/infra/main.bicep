@@ -55,7 +55,7 @@ module database './modules/database.bicep' = {
   params: {
     projectName: projectName
     environment: environment
-    location: location
+    location: 'eastus2'
     tags: commonTags
     options: contains(config, 'database') ? config.database : {}
   }

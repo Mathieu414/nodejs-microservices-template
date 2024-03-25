@@ -13,7 +13,7 @@ param projectName string
 param environment string
 
 @description('The Azure region where all resources will be created')
-param location string = resourceGroup().location
+param location string = 'eastus2'
 
 @description('Tags for the resources')
 param tags object = {}
